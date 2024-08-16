@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "no-underscore-dangle": "off",
+    "no-new": "off",
+    "class-methods-use-this": "off"
+  },
+  "ignorePatterns": [
+    "dist",
+    "node_modules",
+    "jest.config.ts"
+  ]
+}
