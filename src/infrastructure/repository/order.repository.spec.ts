@@ -34,7 +34,7 @@ describe('Order repository tests', () => {
     const customerRepository = new CustomerRepository();
     const customer = new Customer('123', 'Customer 1');
     const address = new Address('Street 1', 1, 'Zipcode 1', 'City 1');
-    customer.changeAddress(address);
+    customer.addAddress(address);
     await customerRepository.create(customer);
 
     const productRepository = new ProductRepository();
@@ -79,7 +79,7 @@ describe('Order repository tests', () => {
     const customerRepository = new CustomerRepository();
     const customer = new Customer('1', 'Customer 1');
     const address = new Address('Street 1', 1, 'Zipcode 1', 'City 1');
-    customer.changeAddress(address);
+    customer.addAddress(address);
     await customerRepository.create(customer);
 
     const productRepository = new ProductRepository();
@@ -168,7 +168,7 @@ describe('Order repository tests', () => {
     const customerRepository = new CustomerRepository();
     const customer = new Customer('1', 'Customer 1');
     const address = new Address('Street 1', 1, 'Zipcode 1', 'City 1');
-    customer.changeAddress(address);
+    customer.addAddress(address);
     await customerRepository.create(customer);
 
     const productRepository = new ProductRepository();
@@ -195,7 +195,7 @@ describe('Order repository tests', () => {
     const customerRepository = new CustomerRepository();
     const customer = new Customer('1', 'Customer 1');
     const address = new Address('Street 1', 1, 'Zipcode 1', 'City 1');
-    customer.changeAddress(address);
+    customer.addAddress(address);
     await customerRepository.create(customer);
 
     const productRepository = new ProductRepository();

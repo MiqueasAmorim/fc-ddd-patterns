@@ -49,4 +49,13 @@ export default class Address {
   toString() {
     return `${this._street}, ${this._number}, ${this._zip} - ${this._city}`;
   }
+
+  toJSON() {
+    return {
+      street: this._street,
+      number: this._number,
+      zip: this._zip,
+      city: this._city,
+    };
+  }
 }
