@@ -1,4 +1,3 @@
-import { randomUUID } from 'crypto';
 import CustomerRepository from '../../infrastructure/repository/customer.repository';
 import Customer from '../entity/customer';
 import EventDispatcher from '../event/@shared/event-dispatcher';

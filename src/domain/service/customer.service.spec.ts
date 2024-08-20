@@ -41,7 +41,6 @@ describe('Customer service unit tests', () => {
     const customer = new Customer('1', 'Customer 1');
     const address = new Address('Street 1', 1, 'Zipcode 1', 'City 1');
     customer.addAddress(address);
-    customer.clearDomainEvents();
 
     customerRepository.find = jest.fn().mockReturnValue(customer);
 
